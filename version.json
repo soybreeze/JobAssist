@@ -1,0 +1,16 @@
+{
+   "version": "1.5.4",
+   "build_number": 154,
+   "release_date": "2024-01-15",
+   "download_url": "https://codeup.aliyun.com/6825e3f8a8498cb89770ffbf/JobAssistRelease/raw/master/releases/JobAssist-v1.5.4.zip",
+   "file_size": 15728640,
+   "md5_hash": "实际文件的MD5值",
+   "changelog": [
+     "新增投递记录筛选功能",
+     "修复状态更新问题",
+     "优化界面响应速度",
+     "ma.png资源嵌入优化"
+   ],
+   "required_update": false,
+   "min_supported_version": "1.5.0"
+}
