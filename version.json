@@ -1,16 +1,49 @@
 {
-   "version": "1.5.4",
-   "build_number": 154,
-   "release_date": "2024-01-15",
-   "download_url": "https://codeup.aliyun.com/6825e3f8a8498cb89770ffbf/JobAssistRelease/raw/master/releases/JobAssist-v1.5.4.zip",
-   "file_size": 15728640,
-   "md5_hash": "实际文件的MD5值",
-   "changelog": [
-     "新增投递记录筛选功能",
-     "修复状态更新问题",
-     "优化界面响应速度",
-     "ma.png资源嵌入优化"
-   ],
-   "required_update": false,
-   "min_supported_version": "1.5.0"
+    "version": "1.5.5",
+    "build_number": 155,
+    "release_date": "2024-01-20",
+    "download_url": "https://github.com/soybreeze/JobAssist/releases/download/v1.5.5/JobAssist-v1.5.5.zip",
+    "backup_download_url": "https://codeup.aliyun.com/6825e3f8a8498cb89770ffbf/JobAssist/raw/master/release/JobAssist-v1.5.5.zip",
+    "file_size": 16777216,
+    "md5_hash": "E0A259185DEDA576DAB616CDAB9DBDB1",
+    "changelog": [
+        "新增自动更新管理器功能",
+        "新增SSL安全支持和HTTPS连接",
+        "修复网络连接稳定性问题",
+        "修复'Connection closed'网络连接错误",
+        "修复阿里云服务器认证连接失败",
+        "修复GitHub API访问网络配置问题",
+        "优化网络请求超时设置(30秒)",
+        "优化启动性能，延迟更新检查",
+        "重构UpdateManager类处理版本更新",
+        "添加OpenSSL库文件支持",
+        "清理项目文件，删除旧版本发布包",
+        "增强SSL证书验证和加密传输",
+        "改进错误处理机制和重试逻辑"
+    ],
+    "required_update": false,
+    "min_supported_version": "1.5.0",
+    "security_enhancements": [
+        "HTTPS加密通信",
+        "SSL证书验证",
+        "防止中间人攻击",
+        "安全的版本信息获取"
+    ],
+    "known_issues": [
+        "企业网络环境下SSL证书验证可能需要额外配置",
+        "首次启动更新检查需要2-3秒响应时间",
+        "网络切换时可能需要重启程序重新连接"
+    ],
+    "compatibility": {
+        "backward_compatible": true,
+        "supported_versions": ["1.5.0", "1.5.1", "1.5.2", "1.5.3", "1.5.4"],
+        "data_migration": false
+    },
+    "technical_details": {
+        "ssl_support": true,
+        "auto_update": true,
+        "network_timeout": 30,
+        "retry_mechanism": true,
+        "async_update_check": true
+    }
 }
